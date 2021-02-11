@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
+import * as emailjs from 'emailjs-com';
 import * as Icon from "react-feather";
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
@@ -33,6 +34,18 @@ function Contact(){
     } else{
       setError(false);
       setMessage('You message has been sent!!!');
+      let emailTemplate = {
+        from_name:formdata.email,
+        to_name:'Conner',
+        subject:formdata.subject,
+        message_html:formdata.message
+      }
+      emailjs.send(
+        'gmail',
+        'template_0jceheh',
+        emailTemplate,
+        'user_B5HV8NQbQ9W5MuAxRLtS1'
+      )
     }
   }
   const handleChange = (event) => {
