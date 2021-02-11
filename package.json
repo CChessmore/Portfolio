@@ -1,5 +1,5 @@
 {
-  "homepage": "https://CChessmore.github.io/Portfolio",
+  "homepage": "https://cchessmore.github.io/",
   "name": "cchessmore-portfolio",
   "version": "3.0.0",
   "dependencies": {
@@ -28,7 +28,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
