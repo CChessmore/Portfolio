@@ -11,7 +11,7 @@ const database = {
       linkedin: 'https://linkedin.com/in/conner-chessmore',
       github: 'https://github.com/CChessmore/'
     },
-    brandImage: '/images/brand-image.jpg',
+    brandImage: '/images/brand-image.png',
     aboutImage: '/images/about-image.jpg',
     aboutImageLg: '/images/about-image-lg.jpg',
     cvfile: '/files/CodingResume.pdf'
